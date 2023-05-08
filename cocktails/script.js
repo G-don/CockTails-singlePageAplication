@@ -63,7 +63,7 @@ function getDrinkRecipe(e){
 
 
 function drinkRecipeModal(drink){
-    console.log(drink);
+  
     drink = drink[0];
     let html = `
         <h2 class = "recipe-title">${drink.strDrink}</h2>
