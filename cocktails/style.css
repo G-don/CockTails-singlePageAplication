@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --pink: #ff0084;
+    --blue: #04f4ec;
+}
+
+
+html {
+    background-color: black;
+    
+}
+body {
+    font-weight: 300;
+    font-size: 2.05rem;
+    line-height: 1.6;
+    font-family: "Sacramento", sans-serif;
+}
+
+.container {
+    background-color: black !important;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text {
+    
+    opacity: 0.8;
+}
+.error {
+    color: var(--pink);
+    font-size: 2.5rem;
+    opacity: 75%;
+}
+
+#cocktail {
+    font-size: 17rem;
+    z-index: -1;
+    color:var(--blue);
+    animation: pulsate 2.5s infinite alternate;
+    width: 17rem;
+    height: auto;
+    
+}
+
+.title {
+    font-size: 6.5rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 6s infinite;
+    display: inline-block;
+    padding: 0.5rem;
+    z-index: 0;
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+blockquote {
+    text-align: center;
+    animation: blink 2s infinite;
+    -webkit-animation: blink 2s infinite;
+    color:var(--blue);
+}
+
+h2 {
+    color: var(--blue);
+    animation: blink 3s infinite;
+    -webkit-animation: blink 3s infinite;
+}
+.search-result {
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+}
+.drink-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.drink-search {
+    margin: 2rem 0;
+    position: relative;
+}
+
+.drink-search cite{
+    font-size: 2.05rem;
+}
+
+.drink-search-box {
+    margin: 2.2rem;
+    display: flex;
+    align-items: stretch;
+    height: fit-content;
+    margin-left: 27%;
+    color:var(--pink);
+}
+
+.search-control, .search-btn {
+    width: 60%;
+}
+
+.search-control {
+    padding: 0 1rem;
+    font-size: 2.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--pink);
+    color: var(--blue);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: black !important;
+}
+
+.search-control::placeholder {
+    color: #04f4ec;
+    font-size: 1.6rem;
+}
+
+.search-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+    background: var(--pink);
+    color: var(--blue);
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.search-btn::hover {
+    background: var(--pink);
+}
+
+.drink-result {
+    margin: 4rem;
+}
+
+#drink {
+    margin: 2rem 0;
+    display: grid;
+    grid-auto-columns: 250px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-content: center;
+}
+
+.drink-item{
+    border-radius: 1rem;
+    -webkit-border-r: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem 0;
+    border: 2px solid var(--pink);
+    box-shadow: 2px 2px 10px var(--blue);
+}
+
+.drink-img img {
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid var(--pink);
+}
+
+.drink-name {
+    padding: 1.5rem 0.5rem;
+    color: var(--blue);
+}
+
+.drink-name h3 {
+    font-size: 2rem;
+}
+
+.recipe-btn {
+    text-decoration: none;
+    color: var(--blue);
+    background: var(--pink);
+    font-weight: 900;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.recipe-btn:hover {
+    background: var(--blue);
+    color:var(--pink);
+}
+
+.drink-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #fff;
+    background: black;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    width: 50%;
+    height:90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    padding: 2rem 0;
+    border: 2px solid var(--blue);
+}
+
+.drink-details::-webkit-scrollbar {
+    width: 10px;
+}
+
+.drink-details::-webkit-scrollbar-thumb {
+    background: var(--pink);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    scrollbar-color:var(--pink);
+}
+
+/* JS related */
+.showRecipe {
+    display: block;
+}
+
+.drink-details-content {
+    margin: 2rem;
+}
+
+.drink-details-content p:not(.recipe-category){
+    padding: 1rem 0;
+}
+
+.recipe-close-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: var(--blue);
+    color:var(--pink);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.recipe-title {
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 6s infinite;
+}
+
+.recipe-category {
+    background: var(--pink);
+    font-weight: 900;
+    color: var(--tenne-tawny);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.recipe-category {
+    background: var(--pink);
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--blue);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.recipe-instruct {
+    padding: 1rem 0;
+    color: var(--blue);
+    margin: 15px;
+}
+
+.recipe-measures {
+    padding: 1rem 0;
+    color: var(--blue);
+    margin: -55px;
+}
+
+h3 {
+    animation: blink 6s infinite;
+    -webkit-animation: blink 3s infinite;
+}
+
+.measure {
+    margin: 15px;
+}
+
+.help {
+   margin: 35px;
+}
+
+.instruct {
+    font-size: 2rem;
+    margin: -20px;
+}
+
+.recipe-drink-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 60px auto;
+    display: block;
+    border: 2px solid var(--pink);
+    box-shadow: 2px 2px 10px var(--blue);
+}
+
+.recipe-drink-img img:hover {
+    border: 2px solid var(--blue);
+    box-shadow: 2px 2px 10px var(--pink);
+}
+
+.recipe-link {
+    margin: 1.4rem 0;
+    animation: blink 2s infinite;
+    -webkit-animation: blink 2s infinite;
+}
+
+.recipe-link a{
+    color: var(--blue);
+    font-size: 2.5rem;
+    font-weight: 900;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.recipe-link a:hover {
+    color: var(--pink);
+}
+
+.recipe-link a:hover{
+    opacity: 0.8;
+}
+
+.notFound {
+    grid-template-columns: 1fr!important;
+    color: var(--blue);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+@media screen and (min-width: 496px) {
+
+    .meal-search-box {
+      width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #drink {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+  }
+
+@media screen and (max-width: 498px) {
+    .title {
+      font-size: 4.5rem;
+      white-space: nowrap;
+      top: 180px;
+    }
+    .cocktail {
+      font-size: 8em;
+    }
+    #drink {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: auto;
+    }
+    .drink-details {
+      width: calc(100% - 180px);
+    }
+    .get-recipe {
+      width: 100%;
+    }
+  }
+
+@media screen and (min-width: 650px) {
+
+    .meal-search-box {
+      width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #drink {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+  }
+  
+@media screen and (min-width: 768px) {
+    #drink {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-columns: unset;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+    .drink-item {
+      margin: 0;
+    }
+    
+    .drink-details {
+      width: 700px;
+    }
+  }
+  
+@media screen and (min-width: 992px) {
+    #drink {
+      grid-template-columns: repeat(3, 1fr);
+      
+    }
+  }
+  
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: var(--pink);
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  
+    text-shadow: 0 0 5px #ff00d9, 0 0 15px #04f4ec, 0 0 20px #04f4ec, 0 0 40px #04f4ec, 0 0 60px #3700ff, 0 0 10px #c404f4, 0 0 98px #ff00d9;
+      color: #fff;
+    }
+  }
+  
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #bc13fe,
+        0 0 80px var(--blue),
+        0 0 90px var(--blue),
+        0 0 100px var(--blue),
+        0 0 150px var(--blue);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #04f4ec,
+      0 0 45px #04f4ec,
+      0 0 55px var(--pink),
+      0 0 70px var(--pink),
+      0 0 80px var(--pink);
+  
+  }
+  
+}
