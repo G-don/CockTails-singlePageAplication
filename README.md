@@ -1,4 +1,4 @@
-#Coctails - SPA
+#Cocktails - SPA
 
 ## Description
 
