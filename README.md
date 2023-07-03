@@ -1,5 +1,8 @@
 #Cocktails - SPA
 
+![image](https://github.com/G-don/CockTails-singlePageAplication/blob/main/cocktails/VISUALS/7.png)
+![image](https://github.com/G-don/CockTails-singlePageAplication/blob/main/cocktails/VISUALS/3.png)
+
 ## Description
 
 Welcome to Cocktailz, your go-to destination for all things cocktails! If you're tired of the same old drink, let our expert bartender, Tone Cruz, guide you through a world of new and exciting recipes. With over 30 years of experience behind the bar, Tone is a master of his craft and can provide you with fresh and innovative cocktail ideas.
