@@ -3,6 +3,15 @@
 ![image](https://github.com/G-don/CockTails-singlePageAplication/blob/main/cocktails/VISUALS/7.png)
 ![image](https://github.com/G-don/CockTails-singlePageAplication/blob/main/cocktails/VISUALS/3.png)
 
+##TechStack
+<p align="left">
+<img src="https://github.com/Drete457/Drete457/blob/master/icons/javascript-original.svg" alt="javascript" width="60" height="60"/>
+<img src="https://github.com/Drete457/Drete457/blob/master/icons/html5-original-wordmark.svg" alt="html5" width="60" height="60"/>
+<img src="https://github.com/Drete457/Drete457/blob/master/icons/css3-original-wordmark.svg" alt="css3" width="60" height="60"/>
+</p>
+
+
+
 ## Description
 
 Welcome to Cocktailz, your go-to destination for all things cocktails! If you're tired of the same old drink, let our expert bartender, Tone Cruz, guide you through a world of new and exciting recipes. With over 30 years of experience behind the bar, Tone is a master of his craft and can provide you with fresh and innovative cocktail ideas.
